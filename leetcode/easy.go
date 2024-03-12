@@ -2,7 +2,7 @@ package leetcode
 
 type T struct{}
 
-func containsNearbyDuplicate(nums []int, k int) bool {
+func ContainsNearbyDuplicate(nums []int, k int) bool {
 	hs := make(map[int]T)
 	for i := 0; i < len(nums); i++ {
 		_, isOk := hs[nums[i]]
